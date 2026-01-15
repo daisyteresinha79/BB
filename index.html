@@ -225,6 +225,76 @@ body {
 body {
     padding-top: 56px;
 }
+<style>
+    /* ... todo seu CSS atual ... */
+
+    /* Barra topo fixa (estilo Google Play) */
+    .topo-play {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 56px;
+        background: #f1f3f4;
+        border-bottom: 1px solid #dadce0;
+        display: flex;
+        align-items: center;
+        padding: 0 12px;
+        z-index: 999;
+    }
+
+    .topo-play .logo img {
+        height: 28px;
+    }
+
+    .topo-play .search {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        background: #ffffff;
+        border-radius: 24px;
+        padding: 6px 12px;
+        margin: 0 10px;
+    }
+
+    .topo-play .search svg {
+        width: 18px;
+        height: 18px;
+        fill: #5f6368;
+    }
+
+    .topo-play .search span {
+        font-size: 14px;
+        color: #5f6368;
+        margin-left: 8px;
+    }
+
+    .topo-play .icons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .topo-play .icon {
+        width: 32px;
+        height: 32px;
+        background: #ffffff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topo-play .icon svg {
+        width: 18px;
+        height: 18px;
+        fill: #5f6368;
+    }
+
+    /* empurra o conteúdo pra baixo (mobile) */
+    body {
+        padding-top: 56px;
+    }
+</style>
 
 </style>
 </head>
@@ -267,6 +337,40 @@ body {
 
     </div>
 </div>
+<body>
+
+<!-- BARRA TOPO FIXA -->
+<div class="topo-play">
+
+    <div class="logo">
+        <img src="logo_topo.png" alt="Logo">
+    </div>
+
+    <div class="search">
+        <svg viewBox="0 0 24 24">
+            <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 10-.71.71l.27.28v.79l5 5L20.5 19l-5-5z"/>
+        </svg>
+        <span>Pesquisar apps e jogos</span>
+    </div>
+
+    <div class="icons">
+        <div class="icon">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 17h-2v-2h2v2zm1.07-7.75-.9.92C11.45 13.9 11 14.5 11 16h2v-.5c0-.28.11-.53.29-.71l1.24-1.26a2.5 2.5 0 10-3.53-3.53l-1.41 1.41 1.42 1.42 1.41-1.41a.5.5 0 11.71.71z"/>
+            </svg>
+        </div>
+
+        <div class="icon">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 12c2.7 0 4.88-2.18 4.88-4.88S14.7 2.25 12 2.25
+                7.12 4.43 7.12 7.12 9.3 12 12 12zm0 2.25c-3.26 0-9.75 1.64-9.75 4.88V22h19.5v-2.87c0-3.24-6.49-4.88-9.75-4.88z"/>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <!-- TODO O SEU CONTEÚDO ATUAL AQUI -->
 
 <div class="container">
 
@@ -354,4 +458,5 @@ body {
 
 </body>
 </html>
+
 
